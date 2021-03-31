@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    
+    position: fixed;
+    width:100%;
+    height:90px;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.logoimg{
+    width:70px;
+    
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+header ul li{
+    list-style: none;
+    
+}
+header ul li a{
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 40px;
+}
+section{
+    position: relative;
+    width:100%;
+    height:100vh;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+.content{
+    
+    position:relative;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.content .textbox{
+    padding:100px;
+    position: relative;
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.content .textbox h2{
+    color:#333;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 600;
+}
+.content .textbox h2 span{
+    color:#017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textbox p{
+    color:#333;
+}
+.content .textbox a{
+    display: inline-block;
+    margin-top:20px;
+    padding:8px 20px;
+    background-color: #017143;
+    color:#fff;
+    border-radius: 40px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.content .imagebox{
+    position: relative;
+    width:50%;
+    height:100%;
+    display:flex;
+    justify-content: flex-end;
+    padding-top: 100px;
+    margin-top: 20px;
+}
+.starbuck{
+    width:340px;
+}
+.thumb{
+    position: absolute;
+    left:50%;
+    bottom:20px;
+    transform: translateX(-55%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    width:60px;
+    
+}
+.circle{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: #017143;
+    clip-path: circle(600px at right 800px );
+}
+/*
+@media (max-width:375px){
+    header{
+       
+    }
+    section{
+        padding:20px;
+        
+    }
+    
+    header ul{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content .textbox{
+        margin-top: 35px;
+        width:100%;
+        height: 50%;
+        align-items: center;
+        padding:50px;
+    }
+    .content .textbox h2{
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: center;
+    }
+    .content .textbox h2 span{
+        font-size: 1em;
+    }
+    .content .textbox p{
+        width:100%;
+        font-size:12px;
+        text-align: center;
+    }
+    .starbuck{
+        width:340px;
+        
+    }
+    .content .imagebox{
+        width:100%;
+        height:50%;
+    }
+    .content .textbox a{
+        
+    }
+    .circle{
+        clip-path: circle(355px at right 800px);
+    }
+    .thumb{
+      
+        bottom:40%;
+    }
+}
+
+*/
+
+@media (max-width:375px){
+    header{
+       
+    }
+    section{
+        padding:20px;
+        height:120vh;
+    }
+    
+    header ul{
+        display: none;
+    }
+    .content{
+        flex-direction: column-reverse;
+    }
+    .content .textbox{
+        
+        width:100%;
+        height: 50%;
+        align-items: center;
+        padding:50px;
+        background-color: white;
+    }
+    .content .textbox h2{
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: center;
+    
+    }
+    .content .textbox h2 span{
+        font-size: 1em;
+    }
+    .content .textbox p{
+        width:100%;
+        font-size:12px;
+        text-align: center;
+    }
+    .content .imagebox{
+        
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .starbuck{
+        width:240px;
+    }
+    .thumb{
+        top:50%;
+    }
+    .circle{
+        margin-top: 100px;
+        clip-path: circle(800px at right 900px);
+    }
+}
