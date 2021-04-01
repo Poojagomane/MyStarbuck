@@ -56,6 +56,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     overflow: hidden;
 }
 .content .textbox{
@@ -192,6 +193,8 @@ section{
 
 */
 
+
+/*
 @media (max-width:375px){
     header{
        
@@ -246,4 +249,236 @@ section{
         margin-top: 100px;
         clip-path: circle(800px at right 900px);
     }
+}*/
+
+@media (max-width:1230px){
+    .content .textbox{
+        padding:30px;
+    }
+    .thumb{
+        transform: translateX(-90%);
+    }
 }
+
+@media (max-width:991px){
+    header{
+        padding:0px 40px;
+    }
+    header ul{
+        display: none;
+    }
+    header .logo{
+        width:50px;
+    }
+    .content .textbox{
+        padding:40px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .content .textbox h2{
+        font-size: 2.5em;
+    }
+    .content .textbox p{
+        font-size: 14px;
+    }
+    .thumb {
+      
+        transform: translateX(-118%);
+        
+    }
+}
+
+@media (max-width:852px){
+    .content .textbox h2{
+        font-size: 2.3em;
+    }
+    .content .textbox h2 span{
+        font-size: 1em;
+    }
+    .content .textbox p{
+        font-size: 13px;
+    }
+    .circle{
+        clip-path: circle(535px at right 800px);
+    }
+    .content .textbox a{
+        padding:5px 13px;
+    }
+    .thumb {
+      
+        transform: translateX(-135%);
+        
+    }
+    
+}
+
+@media (max-width:796px){
+    .content .textbox h2{
+        font-size: 2em;
+    }
+    .circle{
+        clip-path: circle(480px at right 800px);
+    }
+    .starbuck{
+        width:320px;
+        
+    }
+    .thumb {
+      
+        transform: translateX(-110%);
+        
+    }
+}
+@media (max-width:713px){
+    header{
+        padding: 0px 30px;
+    }
+    .content .textbox{
+        padding:10px 30px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .content .textbox h2{
+        font-size: 2em;
+    }
+    .content .textbox h2 span{
+        font-size: 1em;
+    }
+    .content .textbox p{
+        font-size: 12px;
+    }
+    .content .textbox a{
+        padding:5px 13px;
+    }
+    .starbuck{
+     width:320px;
+        
+    }
+    .circle{
+        clip-path: circle(450px at right 800px);
+    }
+}
+
+@media (max-width:673px){
+    .content .textbox h2{
+        font-size: 1.8em;
+    }
+    .content .textbox h2 span{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width:618px){
+    .content .textbox h2{
+        font-size: 1.5em;
+    }
+    .thumb{
+        transform: translateX(-90%);
+    }
+    .content .textbox{
+        padding-top:150px;
+        justify-content: flex-start;
+        width:60%;
+    }
+    .content .imagebox{
+        width:40%;
+        padding-top:240px;
+        
+    }
+    .starbuck{
+        width:300px;
+    }
+    .circle{
+        clip-path: circle(400px at right 800px);
+    }
+}
+@media (max-width:531px){
+    .content .textbox{
+        padding-top:110px;
+    }
+    .content .imagebox{
+        padding-top:300px;
+    }
+}
+@media (max-width:478px){
+    section{
+        height:120vh;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content .textbox{
+        
+        padding:130px 30px;
+        justify-content: flex-start;
+        align-items: center;
+        width:100%;
+        height:50%
+    }
+    .content .textbox p{
+        width:100%;
+        text-align: center;
+    }
+    .content .imagebox{
+        padding-top:0px;
+        width:100%;
+        height:50%;
+    }
+    .starbuck{
+        width:330px;
+    }
+    .circle{
+        clip-path: circle(320px at right 900px);
+    }
+    .thumb{
+        transform: translateX(-80%);
+        top:38%;
+        left:70%;
+    }
+}
+@media (max-width:446px){
+    .thumb{
+        
+        top:42%;
+    }
+}
+@media (max-width:388px){
+    .thumb{
+        left:75%;
+    }
+}
+@media (max-width:377px){
+    .thumb{
+        
+        top:45%;
+        left:82%;
+    }
+    .content .imagebox{
+        padding:20px;
+    }
+    .starbuck{
+        width:270px;
+    }
+}
+/*
+@media(max-width:618px){
+    
+    .content .textbox{
+        
+        padding:100px 30px;
+        justify-content: flex-start;
+        align-items: center;
+        width:100%;
+        height:50%
+    }
+    .content .textbox p{
+        text-align: center;
+    }
+    
+    .content .imagebox{
+        
+        width:100%;
+        height:50%;
+    }
+
+}*/
